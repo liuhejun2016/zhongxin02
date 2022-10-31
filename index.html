@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>中信システムズ株式会社</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="static/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="static/assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="static/assets/img/favicons/manifest.json"> 
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="static/js/OverlayScrollbars.min.js"></script>
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="static/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="static/css/hamburgers.min.css" rel="stylesheet">
+    <link href="static/css/loaders.min.css" rel="stylesheet">
+    <link href="static/css/theme.min.css" rel="stylesheet">
+    <link href="static/css/user.min.css" rel="stylesheet">
+    <link rel="preconnect" href="#">
+    <link rel="preconnect" href="#" crossorigin="">
+    <link href="static/css/css2.css" rel="stylesheet">
+	<style type="text/css">
+		.footer{
+			background:#26304a;
+		}
+		.footer .footer-top{
+			padding:10px 0px;
+		}
+		.footer .single-footer {
+			margin-top: 30px;
+		}
+		.footer .single-footer h3 {
+			color: #fff;
+			font-size: 19px;
+			font-weight: 600;
+			position:relative;
+			padding-bottom:20px;
+			text-transform:uppercase;
+			margin-bottom:20px;
+		}
+		.footer .f-about .logo{
+			margin-bottom:23px;
+		}
+		.footer .f-about .text {
+			color: #ccc;
+			margin-bottom: 9px;
+			line-height: 24px;
+		}
+		/* Social */
+		.footer .f-about .social{
+			margin-top:20px;
+		}
+		.footer .f-about .social li{
+			display:inline-block;
+			margin-right:10px;
+		}
+		.footer .f-about .social li:last-child{
+			margin-right:0px;
+		}
+		.footer .f-about .social li a {
+			color: #ffffff9e;
+			height: 38px;
+			width: 38px;
+			line-height: 38px;
+			text-align: center;
+			border: 1px solid #ffffff9e;
+			border-radius: 100%;
+			display: block;
+			font-size: 14px;
+		}
+		.footer .f-about .social li a:hover{
+			background:#3353ea;
+			border-color:#3353ea;
+			color:#fff;
+		}
+		.footer .f-about .social li.active a{
+			background:#3353ea;
+			border-color:#3353ea;
+			color:#fff;
+		}
+		/* Footer Link */
+		.footer .f-link ul li {
+			margin-bottom: 15px;
+		}
+		.footer .f-link ul li:last-child{
+			margin-bottom:0px;
+		}
+		.footer .f-link ul li a {
+			display: inline-block;
+			color: #ccc;
+		}
+		.footer .f-link ul li a:hover{
+			color:#3353ea;
+		}
+		.footer .f-link ul li a i {
+			display: inline-block;
+			margin-right:0px;
+			font-size: 9px;
+			transform: translateY(-1px);
+			opacity:0;
+			visibility:hidden;
+			-webkit-transition:all 0.4s ease;
+			-moz-transition:all 0.4s ease;
+			transition:all 0.4s ease;
+		}
+		.footer .f-link ul li a:hover i{
+			margin-right: 6px;
+			opacity:1;
+			visibility:visible;
+		}
+		/* Latest News */
+		.footer .latest-news{}
+		.footer .single-news {
+			margin-bottom: 20px;
+			padding-left: 90px;
+			position: relative;
+			border-bottom: 1px solid #dddddd47;
+			padding-bottom: 20px;
+		}
+		.footer .single-news:last-child{
+			margin-bottom:0px;
+			padding-bottom:0px;
+			border:none;
+		}
+		.footer .single-news img {
+			width: 70px;
+			height: 70px;
+			border-radius: 0;
+			position: absolute;
+			left: 0;
+		}
+		.footer .single-news h4 {
+			font-size: 15px;
+			line-height: 23px;
+		}
+		.footer .single-news h4 a {
+			color: #ccc;
+			font-weight: 400;
+		}
+		.footer .single-news h4 a:hover{
+			color:#3353ea;
+		}
+		.footer .single-news .date {
+			color: #eee;
+			display: block;
+			margin-top: 7px;
+			font-size: 13px;
+		}
+		/* Copyright */
+		.footer .copyright {
+			background: #111;
+			text-align:left;
+			overflow:hidden;
+			border-top:1px solid #fff3;
+			padding: 20px 0;
+		}
+		.footer .copyright-inner{
+			
+		}
+		.footer .copyright-content p {
+			color: #ccc;
+		}
+		.footer .copyright-content p a{
+			font-weight:500;
+			color:#ccc;
+			-webkit-transition:all 0.4s ease;
+			-moz-transition:all 0.4s ease;
+			transition:all 0.4s ease;
+		}
+		.footer .copyright-content p a:hover{
+			color:#fff;
+		}
+		.footer .copyright-content .links{
+			float:right;
+		}
+		.footer .copyright-content .links li{
+			display:inline-block;
+			margin-right:15px;
+		}
+		.footer .copyright-content .links li:last-child{
+			margin-right:0px;
+		}
+		.footer .copyright-content .links li a{
+			color:#ccc;
+		}
+		.footer .copyright-content .links li a:hover{
+			color:#3353ea;
+		}
+		/*=============================
+			/ End Footer CSS
+		===============================*/
+	</style>
+  </head>
+
+  <body>
+
+    <div class="sticky-top navbar-elixir">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg"> <a class="navbar-brand" href=""><img src="static/picture/logo-dark.png" alt="logo">システムズ株式会社
+</a><button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNavbarCollapse" aria-controls="primaryNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="hamburger hamburger--emphatic"><span class="hamburger-box"><span class="hamburger-inner"></span></span></span></button>
+          <div class="collapse navbar-collapse" id="primaryNavbarCollapse" style="margin-left: 20px;">
+            <ul class="navbar-nav py-3 py-lg-0 mt-1 mb-2 my-lg-0 ms-lg-n1">
+              <li class="nav-item dropdown"><a class="nav-link " href="JavaScript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">ホーム</a>
+                <!-- <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="">Slider Header</a></li>
+                  <li><a class="dropdown-item" href="header-slider-classic.html">Slider Classic</a></li>
+                  <li><a class="dropdown-item" href="header-static.html">Static Header</a></li>
+                  <li><a class="dropdown-item" href="header-static-classic.html">Static Classic</a></li>
+                  <li><a class="dropdown-item" href="header-youtube-video.html">Youtube Background</a></li>
+                  <li><a class="dropdown-item" href="header-youtube-video-classic.html">Youtube Classic</a></li>
+                  <li><a class="dropdown-item" href="header-selfhosted-video.html">Self-hosted Video</a></li>
+                  <li><a class="dropdown-item" href="header-selfhosted-video-classic.html">Self-hosted Classic</a></li>
+                </ul> -->
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link " href="JavaScript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">会社概要</a>
+              <!--  <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="service.html">Services</a></li>
+                  <li><a class="dropdown-item" href="about.html">About</a></li>
+                  <li><a class="dropdown-item" href="alumni.html">Alumni</a></li>
+                  <li><a class="dropdown-item" href="blank.html">Blank Page</a></li>
+                  <li><a class="dropdown-item" href="404.html">404 Page</a></li>
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li><a class="dropdown-item" href="registration.html">Registration</a></li>
+                </ul> -->
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link" href="JavaScript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">事業内容</a>
+               <!-- <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="newsroom.html">Newsroom</a></li>
+                  <li><a class="dropdown-item" href="news.html">Single News</a></li>
+                </ul> -->
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link" href="JavaScript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">採用情報</a>
+               <!-- <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="buttons.html">Buttons</a></li>
+                  <li><a class="dropdown-item" href="colors.html">Colors</a></li>
+                  <li><a class="dropdown-item" href="googlemap.html">Google Map</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                  <li><a class="dropdown-item" href="icons.html">Icons</a></li>
+                  <li><a class="dropdown-item" href="layouthelpers.html">Layout Helpers</a></li>
+                  <li><a class="dropdown-item" href="modal-video.html">Modal Video</a></li>
+                  <li><a class="dropdown-item" href="swiper.html">Swiper</a></li>
+                  <li><a class="dropdown-item" href="typography.html">Typography</a></li>
+                </ul> -->
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link" href="JavaScript:void(0)" role="button">お問合せ</a></li>
+            </ul><a class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block d-lg-inline-block ms-auto my-3 my-lg-0" href="javascript:;" target="_blank">個人情報保護方針</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <div class="preloader" id="preloader">
+        <div class="loader">
+          <div class="line-scale">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <section class="py-0">
+        <div class="swiper theme-slider min-vh-100" data-swiper='{"loop":true,"allowTouchMove":false,"autoplay":{"delay":5000},"effect":"fade","speed":800}'>
+          <div class="swiper-wrapper">
+			  <div class="swiper-slide" data-zanim-timeline="{}">
+			    <div class="bg-holder" style="background-image:url(static/image/header-5.jpg);"></div>
+			    <!--/.bg-holder-->
+			    <div class="container">
+			      <div class="row min-vh-100 py-8 align-items-center" data-inertia='{"weight":1.5}'>
+			        <div class="col-sm-8 col-lg-7 px-5 px-sm-3">
+			          <div class="overflow-hidden">
+			            <h1 class="fs-4 fs-md-5 lh-1" data-zanim-xs='{"delay":0}'>中信システムズ</h1>
+			          </div>
+			          <div class="overflow-hidden">
+			            <p class="text-primary pt-4 mb-5 fs-1 fs-md-2 lh-xs" data-zanim-xs='{"delay":0.1}'>お客様のあらゆるニーズに最強の技術力と対応力でお応えし、幅広い業種の企業に多彩なサービスをご提供しております。.</p>
+			          </div>
+			          <div class="overflow-hidden">
+			            <div data-zanim-xs='{"delay":0.2}'><a class="btn btn-primary me-3 mt-3" href="#!">查看更多<span class="fas fa-chevron-right ms-2"></span></a><a class="btn btn-warning mt-3" href="JavaScript:void(0)">お問合せ<span class="fas fa-chevron-right ms-2"></span></a></div>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+            <div class="swiper-slide" data-zanim-timeline="{}">
+              <div class="bg-holder" style="background-image:url(static/image/header-6.jpg);"></div>
+              <!--/.bg-holder-->
+              <div class="container">
+                <div class="row min-vh-100 py-8 align-items-center" data-inertia='{"weight":1}'>
+                  <div class="col-sm-8 col-lg-12 px-5 px-sm-3">
+                    <div class="overflow-hidden">
+                      <b class="fs-4 fs-md-5 lh-1" data-zanim-xs='{"delay":0}' style="font-size: 36px !important;">　ITは、かつてないスピードで高度化し、技術成長を遂げています</b>
+                    </div>
+                   
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="swiper-slide" data-zanim-timeline="{}">
+              <div class="bg-holder" style="background-image:url(static/image/header-1.jpg);"></div>
+              <!--/.bg-holder-->
+              <div class="container">
+                <div class="row min-vh-100 py-8 align-items-center" data-inertia='{"weight":1.5}'>
+                  <div class="col-sm-8 col-lg-7 px-5 px-sm-3">
+                    <div class="overflow-hidden">
+                      <h1 class="fs-4 fs-md-5 lh-1" data-zanim-xs='{"delay":0}'>DX、IoT、AIなど</h1>
+                    </div>
+                    <div class="overflow-hidden">
+                      <p class="text-primary pt-4 mb-5 fs-1 fs-md-2 lh-xs" data-zanim-xs='{"delay":0.1}'>最新・最先端のIT技術の活用が、企業の変革や成長を加速する時代となっています</p>
+                    </div>
+                    <div class="overflow-hidden">
+                      <div data-zanim-xs='{"delay":0.2}'><a class="btn btn-primary me-3 mt-3" href="#!">查看更多<span class="fas fa-chevron-right ms-2"></span></a><a class="btn btn-warning mt-3" href="JavaScript:void(0)">お問合せ<span class="fas fa-chevron-right ms-2"></span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-nav">
+            <div class="swiper-button-prev"><span class="fas fa-chevron-left"></span></div>
+            <div class="swiper-button-next"><span class="fas fa-chevron-right"></span></div>
+          </div>
+        </div>
+      </section>
+
+     
+
+
+     
+      <!-- <section> begin ============================-->
+      <section>
+        <div class="container">
+          <div class="text-center mb-7">
+            <h3 class="fs-2 fs-md-3"> 中信システムズ株式会社<br>
+会社理念
+</h3>
+            <hr class="short" data-zanim-xs='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll">
+          </div>
+          <div class="row">
+            <div class="col-lg-6 pe-lg-3"><img class="rounded-3 img-fluid" src="static/picture/why-choose-us.jpg" alt="about"></div>
+            <div class="col-lg-6 px-lg-5 mt-6 mt-lg-0" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <div class="overflow-hidden">
+                <div class="px-4 px-sm-0" data-zanim-xs='{"delay":0}'>
+                  <h5 class="fs-0 fs-lg-1"><i class="bi bi-award-fill"></i>最新・最先端のIT技術</h5>
+                  <p class="mt-3">ITは、かつてないスピードで高度化し、技術成長を遂げています。DX、IoT、AIなどの最新・最先端のIT技術の活用が、企業の変革や成長を加速する時代となっています。</p>
+                </div>
+              </div>
+              <div class="overflow-hidden">
+                <div class="px-4 px-sm-0 mt-5" data-zanim-xs='{"delay":0}'>
+                  <h5 class="fs-0 fs-lg-1">最強の技術力</h5>
+                  <p class="mt-3">中信システムズ、お客様のあらゆるニーズに最強の技術力と対応力でお応えし、幅広い業種の企業に多彩なサービスをご提供しております。</p>
+                </div>
+              </div>
+			  <div class="overflow-hidden">
+			    <div class="px-4 px-sm-0 mt-5" data-zanim-xs='{"delay":0}'>
+			      <h5 class="fs-0 fs-lg-1">開発、保守、運用</h5>
+			      <p class="mt-3">コンサルティングから開発、保守、運用までワンストップで、お客様のニーズに密着した幅広い最良のITサービスをご提供できることが私たちの最大の特徴です。</p>
+			    </div>
+			  </div>
+              <div class="overflow-hidden">
+                <div class="px-4 px-sm-0 mt-5" data-zanim-xs='{"delay":0}'>
+                  <h5 class="fs-0 fs-lg-1">満足を提供し続ける限り発展します</h5>
+                  <p class="mt-3">企業はお客様と社員に満足を提供し続ける限り発展します。企業も人も長持ちの秘訣は２つ、</p>
+                </div>
+              </div>
+			  <div class="overflow-hidden">
+			    <div class="px-4 px-sm-0 mt-5" data-zanim-xs='{"delay":0}'>
+			      <h5 class="fs-0 fs-lg-1">環境にうまく適応する「しなやかさ」</h5>
+			      <p class="mt-3">環境にうまく適応する「しなやかさ」、危機や困難にも負けない「したたかさ」。わたしたちはこれらを大事にして事業に邁進していきます。</p>
+			    </div>
+			  </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section>
+    
+    
+
+      <!-- <section> begin ============================-->
+      <section class="bg-100">
+        <div class="container">
+          <div class="text-center mb-6">
+            <h3 class="fs-2 fs-md-3">事業内容</h3>
+			<div class="overflow-hidden">
+			  <div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a class="d-flex align-items-center" href="JavaScript:void(0)">Learn More<div class="overflow-hidden ms-2" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.8}'><span class="d-inline-block fw-medium">&xrarr;</span></div></a></div>
+			</div>
+            <hr class="short" data-zanim-xs='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll">
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card"><a href="JavaScript:void(0)"><img class="card-img-top" src="static/picture/9.jpg" alt="Featured Image"></a>
+                <div class="card-body" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                  <div class="overflow-hidden"><a href="JavaScript:void(0)">
+                      <h5 data-zanim-xs='{"delay":0}'>クラウドサービス事業</h5>
+                    </a></div>
+				
+                 
+                  <div class="overflow-hidden">
+                    <p class="mt-3" data-zanim-xs='{"delay":0.2}'>クラウド型CRM「Salesforce(セールスフォース)」の導入コンサルティング、開発、運用サービスを軸に、お客様にとって最適なクラウドサービスを提供します。</p><br><br><br><br><br>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card"><a href="JavaScript:void(0)"><img class="card-img-top" src="static/picture/10.jpg" alt="Featured Image"></a>
+                <div class="card-body" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                  <div class="overflow-hidden"><a href="JavaScript:void(0)">
+                      <h5 data-zanim-xs='{"delay":0}'>システム受託開発</h5>
+                    </a></div>
+                 
+                  <div class="overflow-hidden">
+                    <p class="mt-3" data-zanim-xs='{"delay":0.2}'>様々なビジネス分野において、幅広い業務領域を対象としたソフトウェア開発事業を展開しております。お客様に満足いただけることはもちろん、高品質な情報システムより低コストで実現すべく、システムのコンサルティングから要件定義、設計、プログラミング、テスト、保守に至るまで、長年の経験に裏つけられた技術とノウハウを駆使したサービスを提供します。</p>
+                  </div>
+			
+                 
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card"><a href="JavaScript:void(0)"><img class="card-img-top" src="static/picture/11.jpg" alt="Featured Image"></a>
+                <div class="card-body" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                  <div class="overflow-hidden"><a href="JavaScript:void(0)">
+                      <h5 data-zanim-xs='{"delay":0}'>システム運用保守サービス</h5>
+                    </a></div>
+                 
+                  <div class="overflow-hidden">
+                    <p class="mt-3" data-zanim-xs='{"delay":0.2}'>多種多様な情報システムに関するシステムコンサルティング、運用管理・監視、ヘルプデスク、運用技術者の育成など、各種情報処理サービスをご提供することで、より効率的で安全性の高いシステム運用を実現致します。</p><br><br><br><br>
+                  </div>
+				 
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+    </main>
+  <footer class="footer">
+  	<!-- Footer Top -->
+  	<div class="footer-top ">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-md-4 col-sm-12 col-xs-12">
+  					<!-- Single Widget -->
+  					<div class="single-footer f-about">
+  						<div class="logo">
+  							<h3>株式会社中信システムズ</h3>
+  						</div>
+  						<p class="text">〒210-0818 神奈川県川崎市川崎区中瀬３丁目２０番１８－７０１号<br>
+  							TEL. 080-3523-8217<br>
+  							FAX. 080-3523-8217<br>
+  							Email. vista-info@vista-sys.com</p>
+  						<!-- Social -->
+  						<!-- <ul class="social">
+  							<li class="active"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+  							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+  							<li><a href="#"><i class="fab fa-behance"></i></a></li>
+  							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+  						</ul> -->
+  						<!-- End Social -->
+  					</div>
+  					<!-- End Single Widget -->
+  				</div>
+  				<div class="col-md-4 col-sm-6 col-xs-12">
+  					<!-- Single Widget -->
+  					<div class="single-footer f-link">
+  
+  						<div class="row">
+  							<div class="col-md-6 col-sm-6 col-xs-12">
+  								<ul>
+  									<li><a href="#">会社概況</a></li>
+  									<li><a href="#">会社概要</a></li>
+  									<li><a href="#">事業内容</a></li>
+  									
+  								</ul>
+  							</div>
+  							<div class="col-md-6 col-sm-6 col-xs-12">
+  								<ul>
+  									<li><a href="#">新着情報</a></li>
+  									<li><a href="#">人材募集</a></li>
+  									<li><a href="#">問い合わせ </a></li>
+  								</ul>
+  							</div>
+  						</div>
+  					</div>
+  					<!-- End Single Widget -->
+  				</div>
+  				<div class="col-md-4 col-sm-6 col-xs-12">
+  					<!-- Single Widget -->
+  					<div class="single-footer f-link">
+  
+  						<div class="row">
+  							<div class="col-md-6 col-sm-6 col-xs-12">
+  								<ul>
+  									<li><a href="#">採用情報</a></li>
+  									<li><a href="#">中途採用</a></li>
+  									<li><a href="#">新卒採用</a></li>
+  
+  								</ul>
+  							</div>
+  							
+  						</div>
+  					</div>
+  					<!-- End Single Widget -->
+  				</div>
+  
+  			</div>
+  		</div>
+  	</div>
+  	<!-- End Footer Top -->
+  
+  
+  	<!-- End Copyright -->
+  </footer>
+    <footer class="footer bg-primary text-center py-4">
+      <div class="container">
+        <div class="row align-items-center opacity-85 text-white">
+          <div class="col-sm-3 text-sm-start"><a href=""><img src="static/picture/logo-light.png" alt="logo"></a></div>
+          <div class="col-sm-6 mt-3 mt-sm-0">
+            <p class="lh-lg mb-0 fw-semi-bold">Copyright &copy; 2022.中信システムズ株式会社 All rights reserved.</p>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/is.min.js"></script>
+    <script src="static/js/BigPicture.js"> </script>
+    <script src="static/js/countUp.umd.js"> </script>
+    <script src="static/js/swiper-bundle.min.js"></script>
+    <script src="static/js/all.min.js"></script>
+    <script src="static/js/lodash.min.js"></script>
+    <script src="static/js/imagesloaded.pkgd.min.js"></script>
+    <script src="static/js/gsap.js"></script>
+    <script src="static/js/customEase.js"></script>
+    <script src="static/js/theme.js"></script>
+  </body>
+
+</html>
