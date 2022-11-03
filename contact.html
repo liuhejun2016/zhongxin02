@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>中信システムズ株式会社</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+   
+    <link rel="manifest" href="static/assets/img/favicons/manifest.json"> 
+    <meta name="theme-color" content="#ffffff">
+    <script src="static/js/OverlayScrollbars.min.js"></script>
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="static/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="static/css/hamburgers.min.css" rel="stylesheet">
+    <link href="static/css/loaders.min.css" rel="stylesheet">
+    <link href="static/css/theme.min.css" rel="stylesheet">
+    <link href="static/css/user.min.css" rel="stylesheet">
+    <link rel="preconnect" href="#">
+    <link rel="preconnect" href="#" crossorigin="">
+    <link href="static/css/css2.css" rel="stylesheet">
+	<style type="text/css">
+		.footer{
+			background:#26304a;
+		}
+		.footer .footer-top{
+			padding:10px 0px;
+		}
+		.footer .single-footer {
+			margin-top: 30px;
+		}
+		.footer .single-footer h3 {
+			color: #fff;
+			font-size: 19px;
+			font-weight: 600;
+			position:relative;
+			padding-bottom:20px;
+			text-transform:uppercase;
+			margin-bottom:20px;
+		}
+		.footer .f-about .logo{
+			margin-bottom:23px;
+		}
+		.footer .f-about .text {
+			color: #ccc;
+			margin-bottom: 9px;
+			line-height: 24px;
+		}
+		/* Social */
+		.footer .f-about .social{
+			margin-top:20px;
+		}
+		.footer .f-about .social li{
+			display:inline-block;
+			margin-right:10px;
+		}
+		.footer .f-about .social li:last-child{
+			margin-right:0px;
+		}
+		.footer .f-about .social li a {
+			color: #ffffff9e;
+			height: 38px;
+			width: 38px;
+			line-height: 38px;
+			text-align: center;
+			border: 1px solid #ffffff9e;
+			border-radius: 100%;
+			display: block;
+			font-size: 14px;
+		}
+		.footer .f-about .social li a:hover{
+			background:#3353ea;
+			border-color:#3353ea;
+			color:#fff;
+		}
+		.footer .f-about .social li.active a{
+			background:#3353ea;
+			border-color:#3353ea;
+			color:#fff;
+		}
+		/* Footer Link */
+		.footer .f-link ul li {
+			margin-bottom: 15px;
+		}
+		.footer .f-link ul li:last-child{
+			margin-bottom:0px;
+		}
+		.footer .f-link ul li a {
+			display: inline-block;
+			color: #ccc;
+		}
+		.footer .f-link ul li a:hover{
+			color:#3353ea;
+		}
+		.footer .f-link ul li a i {
+			display: inline-block;
+			margin-right:0px;
+			font-size: 9px;
+			transform: translateY(-1px);
+			opacity:0;
+			visibility:hidden;
+			-webkit-transition:all 0.4s ease;
+			-moz-transition:all 0.4s ease;
+			transition:all 0.4s ease;
+		}
+		.footer .f-link ul li a:hover i{
+			margin-right: 6px;
+			opacity:1;
+			visibility:visible;
+		}
+		/* Latest News */
+		.footer .latest-news{}
+		.footer .single-news {
+			margin-bottom: 20px;
+			padding-left: 90px;
+			position: relative;
+			border-bottom: 1px solid #dddddd47;
+			padding-bottom: 20px;
+		}
+		.footer .single-news:last-child{
+			margin-bottom:0px;
+			padding-bottom:0px;
+			border:none;
+		}
+		.footer .single-news img {
+			width: 70px;
+			height: 70px;
+			border-radius: 0;
+			position: absolute;
+			left: 0;
+		}
+		.footer .single-news h4 {
+			font-size: 15px;
+			line-height: 23px;
+		}
+		.footer .single-news h4 a {
+			color: #ccc;
+			font-weight: 400;
+		}
+		.footer .single-news h4 a:hover{
+			color:#3353ea;
+		}
+		.footer .single-news .date {
+			color: #eee;
+			display: block;
+			margin-top: 7px;
+			font-size: 13px;
+		}
+		/* Copyright */
+		.footer .copyright {
+			background: #111;
+			text-align:left;
+			overflow:hidden;
+			border-top:1px solid #fff3;
+			padding: 20px 0;
+		}
+		.footer .copyright-inner{
+			
+		}
+		.footer .copyright-content p {
+			color: #ccc;
+		}
+		.footer .copyright-content p a{
+			font-weight:500;
+			color:#ccc;
+			-webkit-transition:all 0.4s ease;
+			-moz-transition:all 0.4s ease;
+			transition:all 0.4s ease;
+		}
+		.footer .copyright-content p a:hover{
+			color:#fff;
+		}
+		.footer .copyright-content .links{
+			float:right;
+		}
+		.footer .copyright-content .links li{
+			display:inline-block;
+			margin-right:15px;
+		}
+		.footer .copyright-content .links li:last-child{
+			margin-right:0px;
+		}
+		.footer .copyright-content .links li a{
+			color:#ccc;
+		}
+		.footer .copyright-content .links li a:hover{
+			color:#3353ea;
+		}
+		/*=============================
+			/ End Footer CSS
+		===============================*/
+	</style>
+  </head>
+
+  <body>
+
+    <div class="sticky-top navbar-elixir">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg"> <a class="navbar-brand" href=""><img src="static/picture/logo-dark.png" alt="logo">システムズ株式会社
+</a><button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNavbarCollapse" aria-controls="primaryNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="hamburger hamburger--emphatic"><span class="hamburger-box"><span class="hamburger-inner"></span></span></span></button>
+          <div class="collapse navbar-collapse" id="primaryNavbarCollapse" style="margin-left: 20px;">
+            <ul class="navbar-nav py-3 py-lg-0 mt-1 mb-2 my-lg-0 ms-lg-n1">
+              <li class="nav-item dropdown"><a class="nav-link " href="index.html" role="button">ホーム</a>
+               
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link " href="company.html" role="button">会社概要</a>
+              
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link" href="business.html" role="button">事業内容</a>
+              
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link" href="employment.html" role="button">採用情報</a>
+             
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link" href="contact.html" role="button">お問合せ</a></li>
+            </ul><a class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block d-lg-inline-block ms-auto my-3 my-lg-0" href="personal.html" target="_blank">個人情報保護方針</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <div class="preloader" id="preloader">
+        <div class="loader">
+          <div class="line-scale">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <section style="padding-top: 4.5rem;">
+        <div class="bg-holder overlay" style="background-image:url(static/image/background-2.jpg);background-position:center bottom;"></div>
+        <!--/.bg-holder-->
+        <div class="container">
+          <div class="row pt-6" data-inertia='{"weight":1.5}'>
+            <div class="col-md-8 text-white" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <div class="overflow-hidden">
+                <h1 class="text-white fs-4 fs-md-5 mb-0 lh-1" data-zanim-xs='{"delay":0}'>お問合せ</h1>
+                <div class="nav" aria-label="breadcrumb" role="navigation" data-zanim-xs='{"delay":0.1}'>
+                  <ol class="breadcrumb fs-1 ps-0 fw-bold">
+                    <li class="breadcrumb-item"><a class="text-white" href="index.html">ホーム</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a class="text-white" href="contact.html">お問合せ</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section>
+
+ <section class="bg-100" style="padding-top: 80px;">
+   <div class="container">
+	   <div class="text-center mb-6">
+	     <h3 class="fs-2 fs-md-3">お問合せ</h3>
+	     <hr class="short" data-zanim-xs='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll">
+	   </div>
+     <div class="row align-items-stretch justify-content-center mb-4">
+       
+     <div class="card">
+       <div class="card-body h-100 p-5">
+         <b class="mb-3">下記フォームに必要事項を入力のうえ、「送信」ボタンをクリックしてください。
+ </b>
+<br><br>
+         <form>
+           <div class="mb-4"><input class="form-control bg-white" type="text" placeholder="お名前(※）" required="required"></div>
+           <div class="mb-4"><input class="form-control bg-white" type="email" placeholder="ふりがな(※）" required="required"></div>
+		   <div class="mb-4"><input class="form-control bg-white" type="email" placeholder="会社・団体名(※）" required="required"></div>
+		   
+		   <div class="mb-4"><input class="form-control bg-white" type="email" placeholder="メールアドレス(※）" required="required"></div>
+		   
+		   <div class="mb-4"><input class="form-control bg-white" type="email" placeholder="電話番号" required="required"></div>
+		   
+		   <div class="mb-4"><input class="form-control bg-white" type="email" placeholder="URL" required="required"></div>
+		   <div class="mb-4"><input class="form-control bg-white" type="email" placeholder="採用について（希望職種）" required="required"></div>
+		   
+           <div class="mb-4"><textarea class="form-control bg-white" rows="11" placeholder="ご意見・お問合せ内容(※）" required="required"></textarea></div>
+         <div class="mb-4" style="line-height: 30px;"><span><b>個人情報のお取扱いに関しまして</b><br>
+<b>1．事業者の名称&nbsp;&nbsp;&nbsp;</b><br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;株式会社中信システムズ<br>
+<b>2．当社の個人情報保護管理者の氏名又は役職、所属及び連絡先</b><br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;管理者名：個人情報保護管理者<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;所属部署：株式会社中信システムズ　総務部<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;連絡先：電話080-3523-8217<br>
+<b>3．個人情報の利用目的</b><br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;お預かりした個人情報は、以下の目的のみに使用いたします。<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・採用活動<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・各種のお問合せ対応<br>
+<b>4．個人情報の第三者提供について</b><br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;法令に基づく場合等正当な理由によらない限り、事前に本人の同意を得ることなく、個人情報
+       を第三者に開示・提供することはありません。<br>
+<b>5．個人情報の委託について</b><br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;お客様へ商品やサービスを提供する等の業務遂行上、個人情報の一部を外部の委託先へ
+       委託する場合があります。<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;その場合、業務委託先が適切に個人情報を取り扱うように管理いたします。<br>
+<b>6．個人情報に関する権利</b><br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;お預かりした個人情報の利用目的の通知、開示・訂正・追加・削除、利用停止・消去及び第三
+       者提供の停止をご希望される場合は、下記の個人情報に関する苦情、相談窓口までご連絡く
+       ださい。<br>
+<b>7.個人情報に関する苦情、相談窓口</b><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 〒210-0818 &nbsp;&nbsp;神奈川県川崎市川崎区中瀬&nbsp;&nbsp;３丁目２０番&nbsp;&nbsp;&nbsp;&nbsp;１８－７０１号
+       <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 株式会社THS 　個人情報問合せ窓口 TEL：03‐5791‐3080<br>
+<b>8.個人情報のご提供の任意性について</b><br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当社への個人情報のご提供は任意としております。ただし、ご提供いただいた情報が不足して<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;いる場合は、上記3の目的を遂行できない場合があります。</span></div>
+	   <div class="form-check"><input class="form-check-input" type="checkbox" value=""><label class="form-check-label text-500" for="上記、個人情報の取り扱いに同意します。"><b style="font-size: 14px;color: #000000;">上記、個人情報の取り扱いに同意します。</b></label></div>
+	   
+	   
+	   
+	  <div class="mb-4" style="text-align: center;"> <button class="btn btn-md-lg btn-primary" type="Submit"> <span class="color-white fw-600">送信</span></button></div>
+         
+		 
+		 </form>
+       </div>
+     </div>
+   </div><!-- end of .container-->
+ </section>
+    </main>
+  <footer class="footer">
+  	<!-- Footer Top -->
+  	<div class="footer-top ">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-md-4 col-sm-12 col-xs-12">
+  					<!-- Single Widget -->
+  					<div class="single-footer f-about">
+  						<div class="logo">
+  							<h3>株式会社中信システムズ</h3>
+  						</div>
+  						<p class="text">〒210-0818 神奈川県川崎市川崎区中瀬３丁目２０番１８－７０１号<br>
+  							TEL. 044-382-1036<br>
+  							FAX. 044-382-1036<br>
+  							Email.  contact@ctss.co.jp<br>
+  							Personal. infosec@ctss.co.jp</p>
+  						<!-- Social -->
+  						<!-- <ul class="social">
+  							<li class="active"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+  							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+  							<li><a href="#"><i class="fab fa-behance"></i></a></li>
+  							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+  						</ul> -->
+  						<!-- End Social -->
+  					</div>
+  					<!-- End Single Widget -->
+  				</div>
+  				<div class="col-md-4 col-sm-6 col-xs-12">
+  				<!-- Single Widget -->
+  					<div class="single-footer f-link">
+  				  
+  						<div class="row">
+  							<div class="col-md-6 col-sm-6 col-xs-12">
+  								<ul>
+  									<li><a href="company.html">会社概況</a></li>
+  									<li><a href="company.html">会社概要</a></li>
+  									<li><a href="business.html">事業内容</a></li>
+  									
+  								</ul>
+  							</div>
+  							<div class="col-md-6 col-sm-6 col-xs-12">
+  								<ul>
+  									
+  									<li><a href="employment.html">人材募集</a></li>
+  									<li><a href="contact.html">問い合わせ </a></li>
+  								</ul>
+  							</div>
+  						</div>
+  					</div>
+  					<!-- End Single Widget -->
+  				</div>
+  				<div class="col-md-4 col-sm-6 col-xs-12">
+  					<!-- Single Widget -->
+  					<div class="single-footer f-link">
+  				  
+  						<div class="row">
+  							<div class="col-md-6 col-sm-6 col-xs-12">
+  								<ul>
+  									<li><a href="employment.html">採用情報</a></li>
+  									<li><a href="employment.html">中途採用</a></li>
+  									<li><a href="employment.html">新卒採用</a></li>
+  				  
+  								</ul>
+  							</div>
+  							
+  						</div>
+  					</div>
+  					<!-- End Single Widget -->
+  				</div>
+  
+  			</div>
+  		</div>
+  	</div>
+  	<!-- End Footer Top -->
+  
+  
+  	<!-- End Copyright -->
+  </footer>
+    <footer class="footer bg-primary text-center py-4">
+      <div class="container">
+        <div class="row align-items-center opacity-85 text-white">
+          <div class="col-sm-3 text-sm-start"><a href=""><img src="static/picture/logo-light.png" alt="logo"></a></div>
+          <div class="col-sm-6 mt-3 mt-sm-0">
+            <p class="lh-lg mb-0 fw-semi-bold">Copyright &copy; 2022.中信システムズ株式会社 All rights reserved.</p>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/is.min.js"></script>
+    <script src="static/js/BigPicture.js"> </script>
+    <script src="static/js/countUp.umd.js"> </script>
+    <script src="static/js/swiper-bundle.min.js"></script>
+    <script src="static/js/all.min.js"></script>
+    <script src="static/js/lodash.min.js"></script>
+    <script src="static/js/imagesloaded.pkgd.min.js"></script>
+    <script src="static/js/gsap.js"></script>
+    <script src="static/js/customEase.js"></script>
+    <script src="static/js/theme.js"></script>
+  </body>
+
+</html>

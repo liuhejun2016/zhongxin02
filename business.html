@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>中信システムズ株式会社</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+   
+    <link rel="manifest" href="static/assets/img/favicons/manifest.json"> 
+  
+    <meta name="theme-color" content="#ffffff">
+    <script src="static/js/OverlayScrollbars.min.js"></script>
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="static/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="static/css/hamburgers.min.css" rel="stylesheet">
+    <link href="static/css/loaders.min.css" rel="stylesheet">
+    <link href="static/css/theme.min.css" rel="stylesheet">
+    <link href="static/css/user.min.css" rel="stylesheet">
+    <link rel="preconnect" href="#">
+    <link rel="preconnect" href="#" crossorigin="">
+    <link href="static/css/css2.css" rel="stylesheet">
+	<style type="text/css">
+		.footer{
+			background:#26304a;
+		}
+		.footer .footer-top{
+			padding:10px 0px;
+		}
+		.footer .single-footer {
+			margin-top: 30px;
+		}
+		.footer .single-footer h3 {
+			color: #fff;
+			font-size: 19px;
+			font-weight: 600;
+			position:relative;
+			padding-bottom:20px;
+			text-transform:uppercase;
+			margin-bottom:20px;
+		}
+		.footer .f-about .logo{
+			margin-bottom:23px;
+		}
+		.footer .f-about .text {
+			color: #ccc;
+			margin-bottom: 9px;
+			line-height: 24px;
+		}
+		/* Social */
+		.footer .f-about .social{
+			margin-top:20px;
+		}
+		.footer .f-about .social li{
+			display:inline-block;
+			margin-right:10px;
+		}
+		.footer .f-about .social li:last-child{
+			margin-right:0px;
+		}
+		.footer .f-about .social li a {
+			color: #ffffff9e;
+			height: 38px;
+			width: 38px;
+			line-height: 38px;
+			text-align: center;
+			border: 1px solid #ffffff9e;
+			border-radius: 100%;
+			display: block;
+			font-size: 14px;
+		}
+		.footer .f-about .social li a:hover{
+			background:#3353ea;
+			border-color:#3353ea;
+			color:#fff;
+		}
+		.footer .f-about .social li.active a{
+			background:#3353ea;
+			border-color:#3353ea;
+			color:#fff;
+		}
+		/* Footer Link */
+		.footer .f-link ul li {
+			margin-bottom: 15px;
+		}
+		.footer .f-link ul li:last-child{
+			margin-bottom:0px;
+		}
+		.footer .f-link ul li a {
+			display: inline-block;
+			color: #ccc;
+		}
+		.footer .f-link ul li a:hover{
+			color:#3353ea;
+		}
+		.footer .f-link ul li a i {
+			display: inline-block;
+			margin-right:0px;
+			font-size: 9px;
+			transform: translateY(-1px);
+			opacity:0;
+			visibility:hidden;
+			-webkit-transition:all 0.4s ease;
+			-moz-transition:all 0.4s ease;
+			transition:all 0.4s ease;
+		}
+		.footer .f-link ul li a:hover i{
+			margin-right: 6px;
+			opacity:1;
+			visibility:visible;
+		}
+		/* Latest News */
+		.footer .latest-news{}
+		.footer .single-news {
+			margin-bottom: 20px;
+			padding-left: 90px;
+			position: relative;
+			border-bottom: 1px solid #dddddd47;
+			padding-bottom: 20px;
+		}
+		.footer .single-news:last-child{
+			margin-bottom:0px;
+			padding-bottom:0px;
+			border:none;
+		}
+		.footer .single-news img {
+			width: 70px;
+			height: 70px;
+			border-radius: 0;
+			position: absolute;
+			left: 0;
+		}
+		.footer .single-news h4 {
+			font-size: 15px;
+			line-height: 23px;
+		}
+		.footer .single-news h4 a {
+			color: #ccc;
+			font-weight: 400;
+		}
+		.footer .single-news h4 a:hover{
+			color:#3353ea;
+		}
+		.footer .single-news .date {
+			color: #eee;
+			display: block;
+			margin-top: 7px;
+			font-size: 13px;
+		}
+		/* Copyright */
+		.footer .copyright {
+			background: #111;
+			text-align:left;
+			overflow:hidden;
+			border-top:1px solid #fff3;
+			padding: 20px 0;
+		}
+		.footer .copyright-inner{
+			
+		}
+		.footer .copyright-content p {
+			color: #ccc;
+		}
+		.footer .copyright-content p a{
+			font-weight:500;
+			color:#ccc;
+			-webkit-transition:all 0.4s ease;
+			-moz-transition:all 0.4s ease;
+			transition:all 0.4s ease;
+		}
+		.footer .copyright-content p a:hover{
+			color:#fff;
+		}
+		.footer .copyright-content .links{
+			float:right;
+		}
+		.footer .copyright-content .links li{
+			display:inline-block;
+			margin-right:15px;
+		}
+		.footer .copyright-content .links li:last-child{
+			margin-right:0px;
+		}
+		.footer .copyright-content .links li a{
+			color:#ccc;
+		}
+		.footer .copyright-content .links li a:hover{
+			color:#3353ea;
+		}
+		/*=============================
+			/ End Footer CSS
+		===============================*/
+	</style>
+  </head>
+
+  <body>
+
+    <div class="sticky-top navbar-elixir">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg"> <a class="navbar-brand" href=""><img src="static/picture/logo-dark.png" alt="logo">システムズ株式会社
+</a><button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNavbarCollapse" aria-controls="primaryNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="hamburger hamburger--emphatic"><span class="hamburger-box"><span class="hamburger-inner"></span></span></span></button>
+         <div class="collapse navbar-collapse" id="primaryNavbarCollapse" style="margin-left: 20px;">
+           <ul class="navbar-nav py-3 py-lg-0 mt-1 mb-2 my-lg-0 ms-lg-n1">
+             <li class="nav-item dropdown"><a class="nav-link " href="index.html" role="button" >ホーム</a>
+              
+             </li>
+             <li class="nav-item dropdown"><a class="nav-link " href="company.html" role="button" >会社概要</a>
+           
+             </li>
+             <li class="nav-item dropdown"><a class="nav-link" href="business.html" role="button" >事業内容</a>
+             
+             </li>
+             <li class="nav-item dropdown"><a class="nav-link" href="employment.html" role="button" >採用情報</a>
+             
+             </li>
+             <li class="nav-item dropdown"><a class="nav-link" href="contact.html" role="button">お問合せ</a></li>
+           </ul><a class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block d-lg-inline-block ms-auto my-3 my-lg-0" href="personal.html" target="_blank">個人情報保護方針</a>
+         </div>
+        </nav>
+      </div>
+    </div>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <div class="preloader" id="preloader">
+        <div class="loader">
+          <div class="line-scale">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <section style="padding-top: 4.5rem;">
+        <div class="bg-holder overlay" style="background-image:url(static/image/background-2.jpg);background-position:center bottom;"></div>
+        <!--/.bg-holder-->
+        <div class="container">
+          <div class="row pt-6" data-inertia='{"weight":1.5}'>
+            <div class="col-md-8 text-white" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <div class="overflow-hidden">
+                <h1 class="text-white fs-4 fs-md-5 mb-0 lh-1" data-zanim-xs='{"delay":0}'>事業内容</h1>
+                <div class="nav" aria-label="breadcrumb" role="navigation" data-zanim-xs='{"delay":0.1}'>
+                  <ol class="breadcrumb fs-1 ps-0 fw-bold">
+                    <li class="breadcrumb-item"><a class="text-white" href="index.html">ホーム</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="business.html" class="text-white">事業内容</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section>
+
+  <section class="bg-100" style="padding-top: 80px;">
+        <div class="container">
+          <div class="text-center mb-6">
+            <h3 class="fs-2 fs-md-3">事業内容</h3>
+            <hr class="short" data-zanim-xs='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll">
+          </div>
+          <div class="row g-0 position-relative mb-4 mb-lg-0">
+            <div class="col-lg-6 py-3 py-lg-0 mb-0 position-relative" style="min-height:400px;">
+              <div class="bg-holder rounded-ts-lg rounded-te-lg rounded-lg-te-0  " style="background-image:url(static/image/6.jpg);"></div>
+              <!--/.bg-holder-->
+            </div>
+            <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 bg-white rounded-bs-lg rounded-lg-bs-0 rounded-be-lg rounded-lg-be-0 rounded-lg-te-lg ">
+              <div class="elixir-caret d-none d-lg-block"></div>
+              <div class="d-flex align-items-center h-100">
+                <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                  <div class="overflow-hidden">
+                    <h5 data-zanim-xs='{"delay":0}'>クラウドサービス事業</h5>
+                  </div>
+                  <div class="overflow-hidden">
+                    <p class="mt-3" data-zanim-xs='{"delay":0.1}'>クラウド型CRM「Salesforce(セールスフォース)」の導入コンサルティング、開発、運用サービスを軸に、お客様にとって最適なクラウドサービスを提供します。</p>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-0 position-relative mb-4 mb-lg-0">
+            <div class="col-lg-6 py-3 py-lg-0 mb-0 position-relative order-lg-2" style="min-height:400px;">
+              <div class="bg-holder rounded-ts-lg rounded-te-lg rounded-lg-te-0  rounded-lg-ts-0" style="background-image:url(static/image/7.jpg);"></div>
+              <!--/.bg-holder-->
+            </div>
+            <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 bg-white rounded-bs-lg rounded-lg-bs-0 rounded-be-lg  rounded-lg-be-0">
+              <div class="elixir-caret d-none d-lg-block"></div>
+              <div class="d-flex align-items-center h-100">
+                <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                  <div class="overflow-hidden">
+                    <h5 data-zanim-xs='{"delay":0}'>システム受託開発</h5>
+                  </div>
+                  <div class="overflow-hidden">
+                    <p class="mt-3" data-zanim-xs='{"delay":0.1}'>様々なビジネス分野において、幅広い業務領域を対象としたソフトウェア開発事業を展開しております。お客様に満足いただけることはもちろん、高品質な情報システムより低コストで実現すべく、</p>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-0 position-relative mb-4 mb-lg-0">
+            <div class="col-lg-6 py-3 py-lg-0 mb-0 position-relative" style="min-height:400px;">
+              <div class="bg-holder rounded-ts-lg rounded-te-lg rounded-lg-te-0 rounded-lg-ts-0 rounded-bs-0 rounded-lg-bs-lg " style="background-image:url(static/image/8.jpg);"></div>
+              <!--/.bg-holder-->
+            </div>
+            <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 bg-white rounded-bs-lg rounded-lg-bs-0 rounded-be-lg  ">
+              <div class="elixir-caret d-none d-lg-block"></div>
+              <div class="d-flex align-items-center h-100">
+                <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                  <div class="overflow-hidden">
+                    <h5 data-zanim-xs='{"delay":0}'>システム運用保守サービス</h5>
+                  </div>
+                  <div class="overflow-hidden">
+                    <p class="mt-3" data-zanim-xs='{"delay":0.1}'>多種多様な情報システムに関するシステムコンサルティング、運用管理・監視、ヘルプデスク、運用技術者の育成など、各種情報処理サービスをご提供することで、より効率的で安全性の高いシステム運用を実現致します。</p>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+        </div><!-- end of .container-->
+      </section>
+    </main>
+  <footer class="footer">
+  	<!-- Footer Top -->
+  	<div class="footer-top ">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-md-4 col-sm-12 col-xs-12">
+  					<!-- Single Widget -->
+  					<div class="single-footer f-about">
+  						<div class="logo">
+  							<h3>株式会社中信システムズ</h3>
+  						</div>
+  						<p class="text">〒210-0818 神奈川県川崎市川崎区中瀬３丁目２０番１８－７０１号<br>
+  							TEL. 044-382-1036<br>
+  							FAX. 044-382-1036<br>
+  							Email.  contact@ctss.co.jp<br>
+  							Personal. infosec@ctss.co.jp</p>
+  					
+  					</div>
+  					<!-- End Single Widget -->
+  				</div>
+  				<div class="col-md-4 col-sm-6 col-xs-12">
+  					<!-- Single Widget -->
+  						<div class="single-footer f-link">
+  					  
+  							<div class="row">
+  								<div class="col-md-6 col-sm-6 col-xs-12">
+  									<ul>
+  										<li><a href="company.html">会社概況</a></li>
+  										<li><a href="company.html">会社概要</a></li>
+  										<li><a href="business.html">事業内容</a></li>
+  										
+  									</ul>
+  								</div>
+  								<div class="col-md-6 col-sm-6 col-xs-12">
+  									<ul>
+  										
+  										<li><a href="employment.html">人材募集</a></li>
+  										<li><a href="contact.html">問い合わせ </a></li>
+  									</ul>
+  								</div>
+  							</div>
+  						</div>
+  						<!-- End Single Widget -->
+  					</div>
+  					<div class="col-md-4 col-sm-6 col-xs-12">
+  						<!-- Single Widget -->
+  						<div class="single-footer f-link">
+  					  
+  							<div class="row">
+  								<div class="col-md-6 col-sm-6 col-xs-12">
+  									<ul>
+  										<li><a href="employment.html">採用情報</a></li>
+  										<li><a href="employment.html">中途採用</a></li>
+  										<li><a href="employment.html">新卒採用</a></li>
+  					  
+  									</ul>
+  								</div>
+  								
+  							</div>
+  						</div>
+  						<!-- End Single Widget -->
+  				</div>
+  
+  			</div>
+  		</div>
+  	</div>
+  	<!-- End Footer Top -->
+  
+  
+  	<!-- End Copyright -->
+  </footer>
+    <footer class="footer bg-primary text-center py-4">
+      <div class="container">
+        <div class="row align-items-center opacity-85 text-white">
+          <div class="col-sm-3 text-sm-start"><a href=""><img src="static/picture/logo-light.png" alt="logo"></a></div>
+          <div class="col-sm-6 mt-3 mt-sm-0">
+            <p class="lh-lg mb-0 fw-semi-bold">Copyright &copy; 2022.中信システムズ株式会社 All rights reserved.</p>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/is.min.js"></script>
+    <script src="static/js/BigPicture.js"> </script>
+    <script src="static/js/countUp.umd.js"> </script>
+    <script src="static/js/swiper-bundle.min.js"></script>
+    <script src="static/js/all.min.js"></script>
+    <script src="static/js/lodash.min.js"></script>
+    <script src="static/js/imagesloaded.pkgd.min.js"></script>
+    <script src="static/js/gsap.js"></script>
+    <script src="static/js/customEase.js"></script>
+    <script src="static/js/theme.js"></script>
+  </body>
+
+</html>
